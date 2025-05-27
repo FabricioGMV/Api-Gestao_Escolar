@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> <!-- Fonte -->
+  <link rel="shortcut icon" href="../img/Professor.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="../CSS/style.css"> <!-- Design Padrão -->
+  <link rel="stylesheet" href="../CSS/professor.css"> <!-- Design Página Professor -->
+
+  <script src="../js/professor.js" defer></script> <!-- Script do Professor -->
+
+  <title>Professores</title>
+</head>
+<body>
+  <header>
+    <div class="header-esquerda">
+      <div class="usuario">
+        <img src="../img/Usuario.png" alt="Usuário" class="icone-usuario" width="40px">
+
+        <div class="tooltip-usuario">
+          <p><strong>Usuário:</strong> Admin</p>
+          <p><strong>Criação:</strong> 15/04/2025</p>
+        </div>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a> | 
+      <a href="aluno.html">Alunos</a> |
+      <a href="turma.html">Turmas</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Cadastrar Professor -->
+    <div class="cadastrar">
+      <h1>Cadastro de Professor</h1>
+      <form id="professor-form">
+        <label>Nome: <input type="text" name="nome" required></label><br>
+        <label>Matéria: <input type="text" name="materia" required></label><br>
+        <label>Observação: <input type="text" name="observacoes" required></label><br>
+        <label>Idade: <input type="number" name="idade" required></label><br>
+        <button type="submit">Cadastrar Professor</button>
+      </form>
+    </div>
+    
+    <!-- Listar Professor -->
+    <div class="listar">
+      <button id="listar-professores">Listar Professores</button>
+      <div id="professores-lista">
+
+      </div>
+    </div>
+
+    <!-- Pop-up para editar Professor -->
+    <div id="edit-popup-Prof" style="display:none;">
+      <h2>Editar Prof</h2>
+      <form id="update-form-Prof">
+        <input type="hidden" id="Prof-id">
+        <label>Nome: <input type="text" id="update-nome" required></label><br>
+        <label>Materia: <input type="text" id="update-materia" required></label><br>
+        <label>Observação: <input type="text" id="update-observacao" required></label><br>
+        <label>Idade: <input type="number" id="update-idade" required></label><br>
+        <button type="submit">Atualizar</button>
+        <button type="button" id="close-popup-Prof">Fechar</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <h3 class="final">Copyright© 2025 Fabrício Moreira & Gustavo Vechiatto</h3>
+    <br>
+    <div class="rodape">
+      <a href="https://github.com/Gustavovechiatto/API-SITE">Código Fonte</a>
+    </div>
+  </footer>
+</body>
+</html>
