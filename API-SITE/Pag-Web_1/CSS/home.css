@@ -1,0 +1,208 @@
+/* Formulário de Logout */
+.modal-fundo {
+  display: none; /* Escondido inicialmente */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.5); /* Preto fraco */
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-conteudo {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.usuario .tooltip-usuario a {
+  display: inline-block;
+  background-color: #060857;
+  color: #fdfdfd;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 25px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.usuario .tooltip-usuario a:hover {
+  background-color: #0a0c8b;
+}
+
+.botoes-modal {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.botoes-modal button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#btnFechar {
+  background-color: #ccc;
+}
+
+#btnConfirmar {
+  background-color: #060857;
+  color: white;
+}
+
+#btnConfirmar:hover {
+  background-color: #0a0c8b;
+}
+
+
+/* Imagem principal */
+.principal {
+  position: relative;
+  width: 100%;
+  height: 830px;
+  background-image: url('../img/Home/building_resized_1905x1000.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+/* Configuração do Texto */
+.conteudo-sobreposto {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+  max-width: 400px;
+  color: #0b5b6b;
+}
+
+#TextoHome {
+  font-size: 2.5rem;
+}
+
+#informacaoGestao {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+#btnMostrarMais {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  background-color: #060857;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  align-self: start;
+}
+
+#btnMostrarMais:hover {
+  background-color: #0a0c8b;
+}
+
+.bloco-topo {
+    padding: 40px 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#selecao {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.bloco-topo h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Conteiner */
+.conteiner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Card */
+.card {
+    width: 300px;
+    height: 460px;
+    margin: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+}
+
+/* Card Header */
+.card-header {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-img {
+    min-width: 100%;
+    width: auto;
+
+}
+
+/* Card Body */
+.card-body {
+    height: 170px;
+    padding: 15px;
+    text-align: flex;
+    font-family: sans-serif;
+}
+
+.card-titulo {
+    font-size: 32px;
+    margin: 15px 0;
+    text-align: left;
+}
+
+.card-texto {
+    font-size: 16px;
+    margin-top: 25px;
+    text-align: left;
+}
+
+/* Card Footer */
+.card-footer {
+    margin-top: 10px;
+    text-align: center;
+    background-color: #060857;
+}
+
+.card-footer a {
+    color: #ffffff;
+    display: block;
+    padding: 29px;
+    text-decoration: none;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.card:hover {
+    transform: scale3d(1.1, 1.1, 1);
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> <!-- Fonte -->
+    <link rel="shortcut icon" href="../img/Home.png" type="image/x-icon"> <!-- Favicon Home -->
+
+    <link rel="stylesheet" href="../CSS/home.css">  <!-- Design Padrão -->
+    <link rel="stylesheet" href="../CSS/style.css"> <!-- Design Padrão -->
+
+    <script src="../js/formHome.js" defer></script>
+
+    <title>Início</title>
+</head>
+<body>
+    <header>
+        <div class="header-esquerda">
+            <div class="usuario">
+                <img src="../img/Usuario.png" alt="Usuário" class="icone-usuario" width="40px">
+                <div class="tooltip-usuario">
+                    <p><strong>Usuário:</strong> James Frutas</p>
+                    <p><strong>Criação:</strong> 20/05/2025</p>
+                    <br>
+
+                    <a href="#" id="login">Logout</a>
+                </div>
+            </div>
+        </div>
+        <nav class="nav">
+            <a href="#professor">Professores</a> | 
+            <a href="#turmas">Turmas</a> |
+            <a href="#alunos">Alunos</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Formulário de Login -->
+        <div id="modal-fundo" class="modal-fundo">
+            <div class="modal-conteudo">
+                <form id="formModal">
+                    <h2>Faça login novamente:</h2>
+                    <br>
+                    <label class="nome">Usuário: <input type="text" id="nome" name="nome" required></label> <br>
+                    <label class="nome">Senha:   <input type="password" id="nome" name="nome" required></label>
+
+                    <div class="botoes-modal">
+                        <button type="button" id="btnFechar">Cancelar</button>
+                        <button type="submit" id="btnConfirmar">Confirmar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Início -->
+        <div class="principal">
+            <div class="conteudo-sobreposto">
+                <h1 id="TextoHome">Olá James, Seja Bem-Vindo!</h1>
+                <p id="informacaoGestao">
+                    Aqui você verá informações sobre você, os demais alunos e os professores do Curso de Tecnologia.
+                </p>
+                <a href="#selecao">
+                    <button id="btnMostrarMais">Mostrar Mais</button>
+                </a>
+            </div>
+        </div>
+        <br>
+        <div class="bloco-topo">
+            <h1 id="selecao">Seleção do Tópico.</h1>
+            <h3>
+                Selecione o que deseja vizualizar, ao clicar, você será redirecionado para uma nova página listando
+                as informações do tópico que selecionou.
+            </h3>
+
+            <div class="conteiner">
+                <!-- Turmas -->
+                <div id="turmas" class="card card-1">
+                    <div class="card-header">
+                        <img src="../img/Home/Turmas_resized.jpg" class="card-img" alt="Card Turmas">
+                    </div>
+
+                    <div class="card-body">
+                        <h1 class="card-titulo">Turmas</h1>
+                        <p class="card-texto">
+                            Listagem das Turmas.
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <a href="../html/turma.html">Continuar...</a>
+                    </div>
+                </div>
+                
+                <!-- Alunos -->
+                <div id="alunos" class="card card-3">
+                    <div class="card-header">
+                        <img src="../img/Home/Alunos_resized.jpg" class="card-img" alt="Card Alunos">
+                    </div>
+
+                    <div class="card-body">
+                        <h1 class="card-titulo">Alunos</h1>
+                        <p class="card-texto">
+                            Listagem dos Alunos.
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <a href="../html/aluno.html">Continuar...</a>
+                    </div>
+                </div>
+
+                <!-- Professores -->
+                <div id="professor" class="card card-2">
+                    <div class="card-header">
+                        <img src="../img/Home/Professores_resized.jpg" class="card-img" alt="Card Professores">
+                    </div>
+
+                    <div class="card-body">
+                        <h1 class="card-titulo">Professores</h1>
+                        <p class="card-texto">
+                            Listagem dos Professores.
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <a href="../html/professor.html">Continuar...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <h3 class="final">Copyright© 2025 Fabrício Moreira & Gustavo Vechiatto</h3>
+        <br>
+        <div class="rodape">
+            <a href="https://github.com/Gustavovechiatto/API-SITE">Código Fonte</a>
+        </div>
+    </footer>
+</body>
+</html>
