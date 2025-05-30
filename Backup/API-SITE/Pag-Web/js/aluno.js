@@ -30,10 +30,10 @@ document.getElementById("listar-alunos").addEventListener("click", async () => {
 
   const container = document.getElementById("alunos-lista");
   container.innerHTML =
-    "<h2>Lista de Alunos</h2>" +
     alunos
       .map(
         (a) => `
+    <br>
     <div>
       <strong>${a.nome}</strong> (ID: ${a.id})<br>
       Nascimento: ${a.data_nascimento} <br>

@@ -1,3 +1,13 @@
+/* Layout da main */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Layout dos blocos */
 .cadastrar, .listar {
   max-width: 600px;
   margin: 30px;
@@ -11,7 +21,7 @@
 .cadastrar form label,
 #update-form label {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-weight: 500;
 }
 
@@ -24,7 +34,7 @@
   border-radius: 6px;
 }
 
-/* Botões */
+/* Todos os botões */
 button {
   margin-top: 10px;
   padding: 8px 16px;
@@ -33,11 +43,11 @@ button {
   background-color: #060857;
   color: white;
   cursor: pointer;
-  transition: background 0.2s ease-in-out;
+  transition: 0.2s;
 }
 
 button:hover {
-  background-color: #060857;
+  background-color: #0a0c8b;;
 }
 
 /* Card de edição */
@@ -46,7 +56,7 @@ button:hover {
   margin: 30px;
   max-width: 600px;
   padding: 20px;
-  background-color: #fff;
+  background-color: #f8f9fa;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
   position: relative;

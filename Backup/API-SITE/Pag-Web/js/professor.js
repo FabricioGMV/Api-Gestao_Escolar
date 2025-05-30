@@ -33,10 +33,10 @@ document
 
     const container = document.getElementById("professores-lista");
     container.innerHTML =
-      "<h2>Lista de Professores</h2>" +
       professores
         .map(
           (p) => `
+    <br>
     <div>
       <strong>${p.nome}</strong> (ID: ${p.id})<br>
       Matéria: ${p.materia}<br>

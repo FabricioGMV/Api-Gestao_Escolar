@@ -36,7 +36,8 @@
   <main>
     <!-- Cadastro Turmas -->
     <div class="cadastrar">
-      <h1>Cadastro de Turma</h1>
+      <h1>Cadastrar Turma:</h1>
+      <br>
       <form id="turma-form">
         <label>Matéria: <input type="text" name="materia" required></label><br>
         <label>Descrição: <input type="text" name="descricao" required></label><br>
@@ -53,15 +54,17 @@
     
     <!-- Listar Turmas -->
     <div class="listar">
-      <button id="listar-turmas">Listar Turmas</button>
+      <h1>Lista de Turmas:</h1>
       <div id="turmas-lista">
       
       </div>
+      <button id="listar-turmas">Listar Turmas</button>
     </div>
-    
+
     <!-- Pop-up para editar Turma -->
     <div id="edit-popup-Turma" style="display:none;">
-      <h2>Editar Turma</h2>
+      <h1>Editar informações da Turma</h1>
+      <br>
       <form id="update-form-Turma">
         <input type="hidden" id="Turma-id">
         <label>Materia: <input type="text" id="update-materia" required></label><br>
@@ -72,7 +75,8 @@
             <option value="false">Não</option>
           </select>
         </label><br>
-        <label>ID do Professor: <input type="number" id="update-professor-id" required></label><br>
+        <label>ID do Professor: <input type="number" id="update-professor-id" required></label>
+        <br>
 
         <button type="submit">Atualizar</button>
         <button type="button" id="close-popup-Turma">Fechar</button>

@@ -28,16 +28,16 @@ document.getElementById("listar-turmas").addEventListener("click", async () => {
 
   const container = document.getElementById("turmas-lista");
   container.innerHTML =
-    "<h2>Lista de Turmas</h2>" +
     turmas
       .map(
         (t) => `
+    <br>
     <div>
-      ID: ${t.id}<br>
-      Matéria: ${t.materia}<br>
-      Descrição: ${t.descricao}<br>
-      Ativo: ${t.ativo ? "Sim" : "Não"}<br>
-      Professor ID: ${t.professor_id}
+      <strong> ID: ${t.id} </strong> <br>
+      Matéria:     ${t.materia} <br>
+      Descrição:   ${t.descricao} <br>
+      Ativo:       ${t.ativo ? "Sim" : "Não"} <br>
+      <strong>Professor ID: ${t.professor_id} </strong> <br>
       <button onclick="editarTurma(${t.id})">Editar</button>
       <button onclick="excluirTurma(${t.id})">Excluir</button>
     </div>
